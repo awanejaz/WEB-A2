@@ -1,0 +1,361 @@
+* { font-family: 'Poppins', sans-serif; }
+
+
+.card {
+  border: 1px solid transparent;
+}
+.card:hover {
+  border-color: var(--main);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+/* ===========================
+   GLOBAL STYLES
+   ===========================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f8f5ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Purple theme colors */
+:root {
+    --main: #6c2ed9;
+    --dark: #4b11a5;
+    --light: #e9ddff;
+}
+
+/* ===========================
+   HEADER
+   ===========================*/
+header {
+    background: var(--main);
+    padding: 25px;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+}
+
+/* ===========================
+   NAVIGATION MENU
+   ===========================*/
+.navbar {
+    background: var(--dark);
+    padding: 12px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: var(--light);
+    color: var(--dark);
+}
+
+.navbar .active {
+    background: white;
+    color: var(--dark);
+}
+
+/* ===========================
+   MAIN CONTAINER
+   ===========================*/
+.container {
+    width: 85%;
+    margin: 40px auto;
+}
+
+/* CARD SECTION */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #bbb;
+}
+
+/* GRID INFO SECTION */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15px;
+    gap: 8px;
+}
+
+/* ===========================
+   FOOTER
+   ===========================*/
+footer {
+    background: var(--main);
+    padding: 15px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+/* ===========================
+   RESPONSIVE
+   ===========================*/
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+/* =======================================
+==========================================
+=========================================
+========================================
+=========================================
+=========================================
+*/
+
+/* ===========================
+   HOBBIES PAGE STYLES
+   ===========================*/
+
+/* Headings */
+.card {
+    margin-bottom: 25px;
+}
+h2, h3 {
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* ===========================
+   TABLE STYLING
+   ===========================*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 18px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table borders */
+table, th, td {
+    border: 2px solid var(--main);
+}
+
+/* Table header */
+th {
+    background: var(--main);
+    color: white;
+    padding: 12px;
+}
+
+/* Table rows */
+td {
+    padding: 10px;
+}
+
+/* Hover effect */
+tr:hover {
+    background: var(--light);
+    transition: 0.3s;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+    table {
+        font-size: 16px;
+    }
+}
+
+/* =======================================
+==========================================
+=========================================
+========================================
+=========================================
+=========================================
+*/
+
+/* ===========================
+   MEDIA PAGE LAYOUT
+   ===========================*/
+
+.media-layout {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.left-media, .right-media {
+    flex: 1;
+}
+
+/* Image styling */
+.media-img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* Video grid */
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .media-layout {
+        flex-direction: column;
+    }
+
+    iframe {
+        height: 220px;
+    }
+}
+
+/* ===========================
+   CONTACT PAGE
+   ===========================*/
+
+.contact-section {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-card {
+    flex: 1;
+}
+
+/* Map styling */
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+}
+
+/* improve spacing inside contact details */
+.contact-card p {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+/* increase space between the 2 contact boxes */
+.contact-card {
+    padding: 29 px;
+    margin-bottom: 20px;
+}
+
+/* add vertical space between headings and content */
+.contact-card h2 {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+header {
+    background: linear-gradient(135deg, #6b00b3, #ae35ff);
+}
+
+.card {
+    transition: 0.4s;
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar a {
+    position: relative;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.card {
+    border-radius: 14px;
+    backdrop-filter: blur(3px);
+}
+
+.card {
+    box-shadow: 0 0 14px rgba(0,0,0,0.1);
+}
+
+
+
